@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body class="text-gray-600">
-    <header class="flex">
+    <header class="flex w-full fixed z-10 bg-white">
       <div class="flex items-center w-1/4 pl-4">
         <button class="pl-2 pr-6">
           <svg
@@ -179,13 +179,13 @@
         </button>
       </div>
     </header>
-    <aside class="w-64">
+    <aside class="w-64 max-h-screen overflow-auto fixed top-0 pt-12">
       <section class="py-2 border-b">
         <ul>
           <li>
             <a
               href="#"
-              class="flex items-center px-6 py-2 text-sm hover:bg-gray-100"
+              class="flex items-center px-6 py-2 text-sm font-medium text-gray-800 bg-gray-200 hover:bg-gray-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
