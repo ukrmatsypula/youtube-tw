@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body class="text-gray-600">
-    <header class="flex w-full fixed z-10 bg-white">
+  <body class="text-gray-600 bg-gray-50">
+    <header class="flex w-full fixed z-30 bg-white">
       <div class="flex items-center w-1/4 pl-4">
         <button class="pl-2 pr-6">
           <svg
@@ -179,7 +179,9 @@
         </button>
       </div>
     </header>
-    <aside class="w-64 max-h-screen overflow-auto fixed top-0 pt-12">
+    <aside
+      class="w-64 max-h-screen overflow-auto fixed top-0 pt-12 z-20 bg-white"
+    >
       <section class="py-2 border-b">
         <ul>
           <li>
@@ -701,9 +703,9 @@
       </section>
     </aside>
 
-    <section class="pt-14">
+    <section class="pl-64 pt-14 fixed bg-white w-full z-10">
       <div
-        class="ml-64 px-4 py-3 border-t border-b flex space-x-3 overflow-auto text-sm whitespace-nowrap"
+        class="px-4 py-3 border-t border-b flex space-x-3 overflow-auto text-sm whitespace-nowrap"
       >
         <a
           href="#"
@@ -797,5 +799,47 @@
         >
       </div>
     </section>
+
+    <main class="grid grid-cols-4 gap-4 ml-64 pt-32 px-5 pb-5">
+      <div class="relative">
+        <img src="https://picsum.photos/id/237/720/400" alt="" />
+        <span
+          class="absolute top-0 right-0 bg-black text-white rounded-sm m-1 p-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+
+        <span
+          class="absolute top-8 right-0 bg-black text-white rounded-sm m-1 p-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg> </span
+        ><span
+          class="absolute bottom-0 right-0 bg-black text-white text-sm rounded-sm m-1 p-1 font-semibold"
+          >6:33</span
+        >
+      </div>
+    </main>
   </body>
 </html>
