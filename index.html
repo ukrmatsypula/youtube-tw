@@ -8,10 +8,11 @@
     <title>Document</title>
   </head>
   <body class="text-gray-600 bg-gray-50">
+    <!-- Header -->
     <header class="flex justify-between w-full fixed z-30">
       <div class="lg:w-1/4 flex">
         <div class="flex items-center xl:w-64 xl:bg-white pl-4">
-          <button class="mr-3 sm:ml-2 sm:mr-6">
+          <button class="mr-3 sm:ml-2 sm:mr-6 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -135,9 +136,9 @@
         </button>
       </div>
       <div
-        class="flex items-center justify-end lg:w-1/4 space-x-4 sm:space-x-5 p-2 sm:px-4"
+        class="flex items-center justify-end lg:w-1/4 sm:space-x-3 p-2 sm:px-4"
       >
-        <button class="sm:hidden">
+        <button class="sm:hidden p-2 focus:outline-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -152,7 +153,7 @@
             />
           </svg>
         </button>
-        <button class="sm:hidden">
+        <button class="sm:hidden p-2 focus:outline-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -321,7 +322,7 @@
           </svg>
 
           <div
-            class="opacity-0 group-hover:opacity-100 absolute top-9 bg-white w-72 border border-t-0 right-0"
+            class="opacity-0 group-hover:opacity-100 absolute top-9 -right-full sm:right-0 bg-white w-72 border border-t-0"
           >
             <section class="py-2 border-b">
               <ul>
@@ -641,7 +642,7 @@
         </button>
       </div>
     </header>
-
+    <!-- Small sidebar -->
     <aside
       class="xl:hidden hidden md:block min-h-screen overflow-auto fixed top-0 pt-14 z-20 bg-white"
     >
@@ -771,7 +772,7 @@
         </ul>
       </section>
     </aside>
-
+    <!-- Sidebar -->
     <aside
       class="hidden xl:block w-64 max-h-screen overflow-auto fixed top-0 pt-12 z-20 bg-white"
     >
@@ -786,7 +787,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-6 h-6 mr-6 text-red-600"
+                class="w-6 h-6 mr-6 text-red-500"
               >
                 <path
                   fill-rule="evenodd"
@@ -1295,11 +1296,11 @@
         <div class="font-normal text-gray-500">&copy; 2023 Google LLC</div>
       </section>
     </aside>
-
+    <!-- Mobile sidebar -->
     <div class="hidden fixed inset-0 bg-black bg-opacity-50 z-30">
       <aside class="w-64 max-h-screen overflow-auto bg-white">
         <section class="flex items-center p-4 border-b sticky top-0 bg-white">
-          <button class="ml-2 mr-6">
+          <button class="ml-2 mr-6 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -1390,7 +1391,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  class="w-6 h-6 mr-6 text-red-600"
+                  class="w-6 h-6 mr-6 text-red-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1900,13 +1901,13 @@
         </section>
       </aside>
     </div>
-
+    <!-- Categories -->
     <section
       class="md:pl-24 xl:pl-64 pt-14 fixed bg-white w-full z-10 bg-opacity-95"
     >
-      <div class="border-t border-b">
+      <div class="border-t border-b px-4 max-w-screen-2xl mx-auto">
         <div
-          class="px-4 py-3 flex space-x-3 overflow-auto text-sm whitespace-nowrap max-w-screen-2xl mx-auto"
+          class="py-3 flex space-x-3 overflow-auto text-sm whitespace-nowrap"
         >
           <a
             href="#"
@@ -2001,7 +2002,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Videos -->
     <main class="md:ml-24 xl:ml-64 pt-32 px-5 pb-5">
       <div
         class="grid sm:grid-cols-2 lg:grid-cols3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 max-w-screen-2xl mx-auto"
