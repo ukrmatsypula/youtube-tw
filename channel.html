@@ -1907,10 +1907,12 @@
     <!-- Main content (channel) -->
     <main class="md:ml-24 xl:ml-64 pt-14">
       <div
-        class="h-52 bg-center bg-cover relative"
+        class="h-20 xl:h-52 bg-center bg-cover relative"
         style="background-image: url(/channel.jpg)"
       >
-        <div class="absolute bottom-4 right-4 bg-black bg-opacity-10 p-2">
+        <div
+          class="absolute bottom-4 right-4 bg-black bg-opacity-50 xl:bg-opacity-10 p-3 xl:p-2"
+        >
           <a href="#" class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1967,13 +1969,15 @@
           </a>
         </div>
       </div>
-      <div class="max-w-screen-2xl px-24 pt-4">
-        <div class="flex justify-between items-center">
+      <div class="max-w-screen-2xl px-20 xl:px-14 pt-4">
+        <div
+          class="flex flex-col xl:flex-row justify-between items-start md:items-center mb-4 xl:mb-0"
+        >
           <div class="flex items-center">
             <img
               src="/channel-avatar.jpg"
               alt=""
-              class="h-16 rounded-full mr-5"
+              class="h-16 rounded-full mr-5 hidden xl:inline"
             />
             <div>
               <div class="flex items-center">
@@ -1995,7 +1999,7 @@
             </div>
           </div>
           <button
-            class="bg-red-600 text-white text-xs uppercase py-2 px-4 rounded-sm focus:outline-none"
+            class="bg-red-600 text-white text-xs uppercase mt-2 xl:mt-0 py-2 px-4 rounded-sm focus:outline-none"
           >
             Subscribe
           </button>
@@ -2004,41 +2008,41 @@
           <nav class="mt-2">
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-900 border-b-2 border-gray-700 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-900 border-b-2 border-gray-700 py-3 inline-block"
               >Home</a
             >
 
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
               >Videos</a
             >
 
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 hidden xl:inline-block"
               >Playlists</a
             >
 
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 hidden xl:inline-block"
               >Community</a
             >
 
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 hidden xl:inline-block"
               >Channels</a
             >
 
             <a
               href="#"
-              class="px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 inline-block"
+              class="px-5 xl:px-6 uppercase text-xs font-medium text-gray-500 hover:text-gray-900 py-3 hidden xl:inline-block"
               >About</a
             >
           </nav>
-          <div class="flex items-center ml-6">
+          <div class="hidden xl:flex items-center ml-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -2063,28 +2067,34 @@
         </div>
       </div>
 
-      <div class="px-14 bg-gray-100">
-        <div class="flex py-6">
+      <div class="px-20 xl:px-14 bg-gray-100">
+        <div class="flex flex-col xl:flex-row py-6">
           <img
-            src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-            class="max-w-sm"
+            src="https://picsum.photos/seed/image7/256"
+            class="xl:max-w-sm max-h-60"
             alt=""
           />
 
-          <div class="pl-6 max-w-md flex flex-col justify-between items-start">
+          <div
+            class="xl:pl-6 mt-3 xl:mt-0 max-w-md flex flex-col justify-between items-start"
+          >
             <div>
               <span class="font-semibold text-gray-900 text-sm"
                 >Video title</span
               >
-              <div class="text-xs my-4">186, 732 views &middot; 1 day ago</div>
-              <div class="text-sm text-black">
+              <div class="text-xs mt-1 xl:my-4">
+                186, 732 views &middot; 1 day ago
+              </div>
+              <div class="text-sm text-black hidden xl:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus illo velit debitis, doloremque, assumenda ad fugit
                 tempora asperiores quae deserunt at temporibus, praesentium esse
                 fugiat aut consequuntur neque officiis. Unde.
               </div>
             </div>
-            <a href="#" class="uppercase font-medium text-xs hover:text-black"
+            <a
+              href="#"
+              class="uppercase font-medium text-xs hover:text-black hidden xl:inline"
               >Read More</a
             >
           </div>
@@ -2116,7 +2126,7 @@
           <div class="mt-5 mb-7 relative">
             <a
               href="#"
-              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-14 -left-4 z-10 flex items-center justify-center"
+              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-8 xl:top-14 -left-4 z-10 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -2133,7 +2143,7 @@
             </a>
             <a
               href="#"
-              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-14 -right-4 z-10 flex items-center justify-center"
+              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-8 xl:top-14 -right-4 z-10 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -2215,7 +2225,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=2" alt="" />
                   <span
@@ -2280,7 +2290,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=3" alt="" />
                   <span
@@ -2345,7 +2355,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=4" alt="" />
                   <span
@@ -2410,7 +2420,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=4" alt="" />
                   <span
@@ -2504,7 +2514,7 @@
           <div class="mt-5 mb-7 relative">
             <a
               href="#"
-              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-14 -left-4 z-10 flex items-center justify-center"
+              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-8 xl:top-14 -left-4 z-10 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -2521,7 +2531,7 @@
             </a>
             <a
               href="#"
-              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-14 -right-4 z-10 flex items-center justify-center"
+              class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-8 xl:top-14 -right-4 z-10 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -2603,7 +2613,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=6" alt="" />
                   <span
@@ -2668,7 +2678,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=7" alt="" />
                   <span
@@ -2733,7 +2743,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=8" alt="" />
                   <span
@@ -2798,7 +2808,7 @@
                 </div>
               </a>
 
-              <a href="#" class="group">
+              <a href="#" class="group hidden xl:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=9" alt="" />
                   <span
@@ -2866,12 +2876,46 @@
           </div>
         </div>
         <!-- other channels -->
-        <div class="border-t border-gray-300 pt-5 pb-10">
+        <div class="border-t border-gray-300 pt-5 pb-10 relative">
           <a href="#" class="font-semibold text-gray-900 text-sm"
-            >Features Channels</a
+            >Features Channels
+          </a>
+          <a
+            href="#"
+            class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-24 xl:top-14 -left-4 z-10 flex items-center justify-center"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="bg-white rounded-full shadow-xl w-9 h-9 absolute top-24 xl:top-14 -right-4 z-10 flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
           <div class="mt-6 flex">
-            <div class="flex flex-col items-center w-1/5">
+            <div class="flex flex-col items-center w-full xl:w-1/5">
               <a href="#" class="w-full flex flex-col items-center">
                 <img
                   src="https://picsum.photos/seed/avatar1/256"
@@ -2889,7 +2933,7 @@
               </button>
             </div>
 
-            <div class="flex flex-col items-center w-1/5">
+            <div class="hidden xl:flex flex-col items-center w-1/5">
               <a href="#" class="w-full flex flex-col items-center">
                 <img
                   src="https://picsum.photos/seed/avatar2/256"
