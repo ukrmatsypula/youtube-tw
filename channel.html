@@ -1905,9 +1905,9 @@
     </div>
 
     <!-- Main content (channel) -->
-    <main class="md:ml-24 xl:ml-64 pt-14">
+    <main class="md:ml-24 xl:ml-64 pt-14 bg-gray-100">
       <div
-        class="h-20 sm:h-32 md:h-40 xl:h-44 2xl:h-52 bg-center bg-cover relative"
+        class="h-20 sm:h-32 md:h-40 xl:h-44 2xl:h-80 bg-center bg-cover relative"
         style="background-image: url(/channel.jpg)"
       >
         <div
@@ -1969,40 +1969,42 @@
           </a>
         </div>
       </div>
-      <div class="max-w-screen-2xl px-20 sm:px-14 md:px-6 xl:px-14 pt-4">
-        <div
-          class="flex flex-col sm:flex-row justify-between items-start md:items-center mb-4 sm:mb-0"
-        >
-          <div class="flex md:items-center">
-            <img
-              src="/channel-avatar.jpg"
-              alt=""
-              class="h-16 rounded-full mr-5 hidden sm:inline"
-            />
-            <div>
-              <div class="flex items-center">
-                <span class="text-2xl text-gray-800">Cities</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-4 h-4 ml-2 mt-1"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div class="text-sm">120k subscribers</div>
-            </div>
-          </div>
-          <button
-            class="bg-red-600 text-white text-xs uppercase mt-2 xl:mt-0 py-2 px-4 rounded-sm focus:outline-none"
+      <div class="px-20 sm:px-14 md:px-6 pt-4 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start md:items-center mb-4 sm:mb-0"
           >
-            Subscribe
-          </button>
+            <div class="flex md:items-center">
+              <img
+                src="/channel-avatar.jpg"
+                alt=""
+                class="h-16 rounded-full mr-5 hidden sm:inline"
+              />
+              <div>
+                <div class="flex items-center">
+                  <span class="text-2xl text-gray-800">Cities</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-4 h-4 ml-2 mt-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div class="text-sm">120k subscribers</div>
+              </div>
+            </div>
+            <button
+              class="bg-red-600 text-white text-xs uppercase mt-2 xl:mt-0 py-2 px-4 rounded-sm focus:outline-none"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
         <div class="flex items-center">
           <nav class="mt-2">
@@ -2067,7 +2069,7 @@
         </div>
       </div>
 
-      <div class="px-20 sm:px-14 md:px-6 xl:px-14 bg-gray-100">
+      <div class="max-w-screen-xl mx-auto px-20 sm:px-14 md:px-6 2xl:px-0">
         <div class="flex flex-col md:flex-row py-6">
           <img
             src="https://picsum.photos/seed/image7/256"
@@ -2423,6 +2425,71 @@
               <a href="#" class="group hidden md:inline">
                 <div class="relative">
                   <img src="https://picsum.photos/720/400?random=5" alt="" />
+                  <span
+                    class="absolute top-0 right-0 bg-black text-white rounded-sm m-1 p-1 opacity-0 bg-opacity-60 group-hover:opacity-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+
+                  <span
+                    class="absolute top-8 right-0 bg-black text-white rounded-sm m-1 p-1 opacity-0 bg-opacity-60 group-hover:opacity-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd"
+                      />
+                    </svg> </span
+                  ><span
+                    class="absolute bottom-0 right-0 bg-black text-white text-sm rounded-sm m-1 p-1 font-semibold opacity-100 group-hover:opacity-0 duration-500"
+                    >6:33</span
+                  >
+                </div>
+                <div class="flex items-start mt-3">
+                  <div class="text-xs">
+                    <span class="font-semibold text-gray-800">Video title</span>
+
+                    <div class="mt-1.5">1k views &middot; 1 day ago</div>
+                  </div>
+                  <button
+                    class="-mt-1 ml-auto p-1 opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.5 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm0 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm0 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
+
+              <a href="#" class="group hidden 2xl:inline">
+                <div class="relative">
+                  <img src="https://picsum.photos/720/400?random=16" alt="" />
                   <span
                     class="absolute top-0 right-0 bg-black text-white rounded-sm m-1 p-1 opacity-0 bg-opacity-60 group-hover:opacity-100"
                   >
@@ -2872,6 +2939,71 @@
                   </button>
                 </div>
               </a>
+
+              <a href="#" class="group hidden 2xl:inline">
+                <div class="relative">
+                  <img src="https://picsum.photos/720/400?random=15" alt="" />
+                  <span
+                    class="absolute top-0 right-0 bg-black text-white rounded-sm m-1 p-1 opacity-0 bg-opacity-60 group-hover:opacity-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+
+                  <span
+                    class="absolute top-8 right-0 bg-black text-white rounded-sm m-1 p-1 opacity-0 bg-opacity-60 group-hover:opacity-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd"
+                      />
+                    </svg> </span
+                  ><span
+                    class="absolute bottom-0 right-0 bg-black text-white text-sm rounded-sm m-1 p-1 font-semibold opacity-100 group-hover:opacity-0 duration-500"
+                    >6:33</span
+                  >
+                </div>
+                <div class="flex items-start mt-3">
+                  <div class="text-xs">
+                    <span class="font-semibold text-gray-800">Video title</span>
+
+                    <div class="mt-1.5">1k views &middot; 1 day ago</div>
+                  </div>
+                  <button
+                    class="-mt-1 ml-auto p-1 opacity-0 group-hover:opacity-100 text-gray-500 hover:text-gray-700 focus:outline-700"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.5 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm0 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm0 6a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -2916,7 +3048,7 @@
           </a>
           <div class="mt-6 flex">
             <div
-              class="flex flex-col items-center w-full sm:w-1/3 md:w-1/4 xl:w-1/5"
+              class="flex flex-col items-center w-full sm:w-1/3 md:w-1/4 xl:w-1/5 2xl:w-1/6"
             >
               <a href="#" class="w-full flex flex-col items-center">
                 <img
@@ -2936,7 +3068,7 @@
             </div>
 
             <div
-              class="hidden sm:flex flex-col items-center sm:w-1/3 md:w-1/4 xl:w-1/5"
+              class="hidden sm:flex flex-col items-center sm:w-1/3 md:w-1/4 xl:w-1/5 2xl:w-1/6"
             >
               <a href="#" class="w-full flex flex-col items-center">
                 <img
